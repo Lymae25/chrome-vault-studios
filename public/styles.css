@@ -1028,3 +1028,16 @@ img { display: block; max-width: 100%; }
   .hero-title { -webkit-text-fill-color: var(--white); background: none; color: var(--white); }
   .hero-clients { opacity: .95; }
 }
+
+/* Gallery images - fill entire tile */
+.tile {
+  position: relative;
+  overflow: hidden;
+}
+
+.tile .tile-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
