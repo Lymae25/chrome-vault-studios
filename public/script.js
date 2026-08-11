@@ -13,14 +13,7 @@
    src:   stien til filen
    poster: kun for video — billedet der vises før afspilning
 ------------------------------------------------------------ */
-const WORK = [
-  {
-    type: "photo",
-    kind: "photo",
-    title: "Chrome Vault Studios",
-    src: "/assets/work/billede1.jpg"
-  }
-];
+
 
 const WORK = [
   // { type: "video", kind: "video", title: "Yumé — Music i Lejet", src: "/assets/work/yume-lejet.mp4", poster: "/assets/work/yume-lejet.jpg" },
