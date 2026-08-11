@@ -22,7 +22,14 @@ const WORK = [
     title: "Chrome Vault Studios",
     src: "/assets/work/chrome-vault-01.jpg"
   }
+ {
+    type: "photo",
+    kind: "photo",
+    title: "Chrome Vault Studios",
+    src: "/assets/work/chrome-vault-02.jpg"
+  }
 ];
+
 
 /* ============================================================
    Header
