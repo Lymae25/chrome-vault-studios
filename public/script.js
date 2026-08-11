@@ -16,9 +16,12 @@
 
 
 const WORK = [
-  // { type: "video", kind: "video", title: "Yumé — Music i Lejet", src: "/assets/work/yume-lejet.mp4", poster: "/assets/work/yume-lejet.jpg" },
-  // { type: "photo", kind: "photo", title: "K-ink — Studio", src: "/assets/work/kink-01.jpg" },
-  // { type: "video", kind: "event", title: "Chateau Motel — Lørdag", src: "/assets/work/chateau.mp4", poster: "/assets/work/chateau.jpg" },
+  {
+    type: "photo",
+    kind: "photo",
+    title: "Chrome Vault Studios",
+    src: "/assets/work/chrome-vault-01.jpg"
+  }
 ];
 
 /* ============================================================
