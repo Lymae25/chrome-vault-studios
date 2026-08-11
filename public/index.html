@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chrome Vault Studios — a visual standard, not a trend</title>
+<meta name="description" content="Chrome Vault Studios laver video og foto til artists, brands og nightlife i København. Book en shoot eller kameramand til dit event.">
+<meta property="og:title" content="Chrome Vault Studios">
+<meta property="og:description" content="a visual standard, not a trend">
+<meta property="og:image" content="/assets/logo.jpg">
+<link rel="icon" href="/assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <a href="#forside" class="brand" data-nav>
+    <img src="/assets/logo.jpg" alt="" class="brand-mark">
+    <span class="brand-name">CHROME VAULT</span>
+  </a>
+
+  <nav class="nav-desktop" aria-label="Hovedmenu">
+    <a href="#forside" data-nav class="nav-link active">Forside</a>
+    <a href="#om" data-nav class="nav-link">Om os</a>
+    <a href="#galleri" data-nav class="nav-link">Galleri</a>
+    <a href="#kontakt" data-nav class="nav-link">Kontakt</a>
+  </nav>
+
+  <button class="menu-btn" id="menuBtn" aria-label="Åbn menu" aria-expanded="false" aria-controls="mobileNav">
+    <span></span><span></span>
+  </button>
+</header>
+
+<!-- ============ MOBILE NAV ============ -->
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <nav aria-label="Mobilmenu">
+    <a href="#forside" data-nav><span class="idx">01</span>Forside</a>
+    <a href="#om" data-nav><span class="idx">02</span>Om os</a>
+    <a href="#galleri" data-nav><span class="idx">03</span>Galleri</a>
+    <a href="#kontakt" data-nav><span class="idx">04</span>Kontakt</a>
+  </nav>
+  <div class="mobile-nav-foot">
+    <a href="https://instagram.com/chromevault_studios" target="_blank" rel="noopener">@chromevault_studios</a>
+    <a href="mailto:chromevaultstudios@outlook.dk">chromevaultstudios@outlook.dk</a>
+  </div>
+</div>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section id="forside" class="hero">
+  <div class="hero-inner">
+    <img src="/assets/logo.jpg" alt="Chrome Vault Studios logo" class="hero-mark rise">
+    <h1 class="hero-title rise" style="--d:.12s">CHROME VAULT</h1>
+    <p class="hero-tagline rise" style="--d:.22s">a visual standard, not a trend</p>
+    <p class="hero-sub rise" style="--d:.32s">
+      Video og foto til artists, brands og nightlife.<br>
+      Optaget i København, klar til at poste.
+    </p>
+    <div class="hero-actions rise" style="--d:.42s">
+      <a href="#kontakt" data-nav class="btn btn-primary">Send en forespørgsel</a>
+      <a href="#galleri" data-nav class="btn btn-ghost">Se arbejdet</a>
+    </div>
+  </div>
+  <div class="hero-clients">
+    <span>Yumé</span><i></i><span>Bonfire Worldwide</span><i></i><span>K-ink</span><i></i><span>Chateau Motel</span>
+  </div>
+</section>
+
+<!-- ============ OM OS ============ -->
+<section id="om" class="section">
+  <p class="eyebrow reveal">Om os</p>
+  <h2 class="section-title reveal" style="--d:.05s">Vi laver content der<br>holder efter første scroll</h2>
+
+  <div class="about-grid">
+    <div class="about-lead reveal" style="--d:.1s">
+      <p>Chrome Vault Studios er et videoproduktionsstudie i København. Vi arbejder med artists, brands, tatovører og nattelivet, og vi laver content der ser dyrt ud uden at koste derefter.</p>
+      <p>Hvert projekt bliver skudt, klippet og graded af den samme person. Der er ingen skabelon, ingen pakke der bliver genbrugt. Du får dit eget setup og dine egne shots.</p>
+    </div>
+    <div class="about-side reveal" style="--d:.15s">
+      <div class="fact">
+        <span class="fact-label">Base</span>
+        <span class="fact-value">København</span>
+      </div>
+      <div class="fact">
+        <span class="fact-label">Levering</span>
+        <span class="fact-value">10 hverdage</span>
+      </div>
+      <div class="fact">
+        <span class="fact-label">CVR</span>
+        <span class="fact-value">46638611</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="services">
+    <article class="service reveal">
+      <h3>Content til artists</h3>
+      <p>Faste pakker med reels og billeder, leveret klar til Instagram og TikTok. Kan køres som løbende aftale.</p>
+    </article>
+    <article class="service reveal" style="--d:.05s">
+      <h3>Brand og kampagne</h3>
+      <p>Fra idé til færdig film. Koncept, optagelse, klipning, color grading og lyd i én proces.</p>
+    </article>
+    <article class="service reveal" style="--d:.1s">
+      <h3>Events og koncerter</h3>
+      <p>Kameramand til festival, klubaften eller koncert. Recap-video og stills fra aftenen.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ GALLERI ============ -->
+<section id="galleri" class="section">
+  <p class="eyebrow reveal">Galleri</p>
+  <h2 class="section-title reveal" style="--d:.05s">Udvalgt arbejde</h2>
+
+  <div class="filters reveal" style="--d:.1s" role="tablist" aria-label="Filtrer galleri">
+    <button class="filter active" data-filter="all">Alt</button>
+    <button class="filter" data-filter="video">Video</button>
+    <button class="filter" data-filter="photo">Foto</button>
+    <button class="filter" data-filter="event">Events</button>
+  </div>
+
+  <div class="gallery" id="gallery"></div>
+
+  <p class="gallery-note">
+    Vil du se mere? Alt bliver lagt op løbende på
+    <a href="https://instagram.com/chromevault_studios" target="_blank" rel="noopener">@chromevault_studios</a>.
+  </p>
+</section>
+
+<!-- ============ KONTAKT ============ -->
+<section id="kontakt" class="section section-contact">
+  <p class="eyebrow reveal">Kontakt</p>
+  <h2 class="section-title reveal" style="--d:.05s">Fortæl os om idéen</h2>
+  <p class="section-sub reveal" style="--d:.1s">
+    Skriv hvad du gerne vil have lavet, så vender vi tilbage inden for et par dage
+    med en pris og en dato.
+  </p>
+
+  <form class="form reveal" id="inquiryForm" style="--d:.15s" novalidate>
+
+    <div class="field-row">
+      <div class="field">
+        <label for="name">Navn</label>
+        <input type="text" id="name" name="name" required autocomplete="name" placeholder="Dit navn eller artistnavn">
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email" placeholder="dig@eksempel.dk">
+      </div>
+    </div>
+
+    <fieldset class="field">
+      <legend>Hvem skriver vi med?</legend>
+      <div class="chips" role="radiogroup">
+        <label class="chip"><input type="radio" name="profile" value="Artist" checked><span>Artist</span></label>
+        <label class="chip"><input type="radio" name="profile" value="Brand"><span>Brand</span></label>
+        <label class="chip"><input type="radio" name="profile" value="Influencer"><span>Influencer</span></label>
+        <label class="chip"><input type="radio" name="profile" value="Privat"><span>Privat</span></label>
+        <label class="chip"><input type="radio" name="profile" value="Andet"><span>Andet</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset class="field">
+      <legend>Hvad er du interesseret i?</legend>
+      <div class="options" role="radiogroup">
+        <label class="option">
+          <input type="radio" name="package" value="Essential" checked>
+          <span class="option-body">
+            <span class="option-name">Essential</span>
+            <span class="option-detail">2 reels + 5 billeder</span>
+            <span class="option-price">1.500 kr</span>
+          </span>
+        </label>
+        <label class="option">
+          <input type="radio" name="package" value="Full">
+          <span class="option-body">
+            <span class="option-name">Full</span>
+            <span class="option-detail">4 reels + 8 billeder</span>
+            <span class="option-price">2.500 kr</span>
+          </span>
+        </label>
+        <label class="option">
+          <input type="radio" name="package" value="Event">
+          <span class="option-body">
+            <span class="option-name">Event</span>
+            <span class="option-detail">Kameramand til festival, koncert eller klub</span>
+            <span class="option-price">Efter aftale</span>
+          </span>
+        </label>
+        <label class="option">
+          <input type="radio" name="package" value="Ved ikke endnu">
+          <span class="option-body">
+            <span class="option-name">Ved ikke endnu</span>
+            <span class="option-detail">Lad os finde ud af det sammen</span>
+            <span class="option-price">—</span>
+          </span>
+        </label>
+      </div>
+    </fieldset>
+
+    <div class="field">
+      <label for="timing">Dato eller periode <span class="optional">valgfri</span></label>
+      <input type="text" id="timing" name="timing" placeholder="F.eks. midt oktober, eller 14. november i Royal Arena">
+    </div>
+
+    <div class="field">
+      <label for="message">Din idé</label>
+      <textarea id="message" name="message" rows="6" required placeholder="Hvad vil du gerne have lavet? Skriv gerne hvad det skal bruges til, hvilken stemning du er ude efter, og hvor det skal optages."></textarea>
+    </div>
+
+    <!-- honeypot: skjult for mennesker, bots udfylder den -->
+    <div class="hp" aria-hidden="true">
+      <label for="company">Firma</label>
+      <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+      <span class="btn-label">Send forespørgsel</span>
+    </button>
+
+    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+  </form>
+
+  <div class="contact-direct">
+    <p>Eller skriv direkte:</p>
+    <a href="mailto:chromevaultstudios@outlook.dk">chromevaultstudios@outlook.dk</a>
+    <a href="https://instagram.com/chromevault_studios" target="_blank" rel="noopener">@chromevault_studios</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-top">
+    <span class="footer-name">CHROME VAULT STUDIOS</span>
+    <span class="footer-tag">a visual standard, not a trend</span>
+  </div>
+  <div class="footer-bottom">
+    <span>København, Danmark · CVR 46638611</span>
+    <span>© <span id="year"></span> Chrome Vault Studios</span>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Galleri visning">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Luk">&times;</button>
+  <div class="lightbox-content" id="lightboxContent"></div>
+</div>
+
+<script src="/script.js"></script>
+</body>
+</html>
