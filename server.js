@@ -140,7 +140,7 @@ app.post("/api/inquiry", rateLimit, async (req, res) => {
 
   try {
     await transporter.sendMail({
-      from: `"Chrome Vault Studios" <${process.env.SMTP_USER}>`,
+from: `"Chrome Vault Studios" <${process.env.MAIL_FROM || "onboarding@resend.dev"}>`,
       to: process.env.MAIL_TO || process.env.SMTP_USER,
       replyTo: email,
       subject: `Forespørgsel: ${name} (${profile || "ikke angivet"})`,
