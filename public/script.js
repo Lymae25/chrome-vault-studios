@@ -34,6 +34,14 @@ const WORK = [
     title: "Chrome Vault Studios",
     src: "/assets/work/chrome-vault-03.mp4",
     poster: "/assets/work/chrome-vault-03.jpg"
+
+    {
+  type: "video",
+  kind: "video",
+  title: "Chrome Vault Studios",
+  src: "/assets/work/chrome-vault-04.mp4",
+  poster: "/assets/work/chrome-vault-04.jpg"
+},
   }
 ];
 
