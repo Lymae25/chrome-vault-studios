@@ -843,6 +843,27 @@ img { display: block; max-width: 100%; }
   padding-top: 8px;
 }
 
+.field-hint {
+  font-family: var(--body);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--chrome);
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+
+.field-message textarea {
+  background: var(--carbon);
+  border: 1px solid var(--edge);
+  padding: 16px;
+  border-radius: 2px;
+}
+
+.field-message textarea:focus {
+  border-color: var(--white);
+  background: var(--raised);
+}
+
 .hp { position: absolute; left: -9999px; opacity: 0; height: 0; overflow: hidden; }
 
 .btn-submit { align-self: flex-start; }
