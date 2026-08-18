@@ -75,9 +75,13 @@ const setMenu = (open) => {
 menuBtn.addEventListener("click", () => setMenu(!mobileNav.classList.contains("open")));
 
 document.addEventListener("keydown", (e) => {
-  if (e.key !== "Escape") return;
-  if (mobileNav.classList.contains("open")) setMenu(false);
-  closeLightbox();
+  if (e.key === "Escape") {
+    if (mobileNav.classList.contains("open")) setMenu(false);
+    closeLightbox();
+  }
+  if (!lightbox.classList.contains("open")) return;
+  if (e.key === "ArrowRight") showNext();
+  if (e.key === "ArrowLeft") showPrev();
 });
 
 /* ============================================================
@@ -216,9 +220,13 @@ const lightbox = document.getElementById("lightbox");
 const lightboxContent = document.getElementById("lightboxContent");
 const lightboxClose = document.getElementById("lightboxClose");
 
+let currentIndex = 0;
+
 function openLightbox(index) {
   const item = WORK[index];
   if (!item) return;
+
+  currentIndex = index;
 
   lightboxContent.innerHTML =
     item.type === "video"
@@ -229,6 +237,23 @@ function openLightbox(index) {
   lightbox.setAttribute("aria-hidden", "false");
   document.body.classList.add("locked");
   lightboxClose.focus();
+  updateLightboxNav();
+}
+
+function showNext() {
+  if (currentIndex < WORK.length - 1) openLightbox(currentIndex + 1);
+}
+
+function showPrev() {
+  if (currentIndex > 0) openLightbox(currentIndex - 1);
+}
+
+function updateLightboxNav() {
+  const prevBtn = document.getElementById("lightboxPrev");
+  const nextBtn = document.getElementById("lightboxNext");
+  if (!prevBtn || !nextBtn) return;
+  prevBtn.disabled = currentIndex === 0;
+  nextBtn.disabled = currentIndex === WORK.length - 1;
 }
 
 function closeLightbox() {

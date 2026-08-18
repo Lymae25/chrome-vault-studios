@@ -1000,6 +1000,37 @@ img { display: block; max-width: 100%; }
 
 .lightbox-close:hover { transform: rotate(90deg); color: var(--chrome); }
 
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--edge-lit);
+  border-radius: 50%;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background .3s var(--ease), border-color .3s var(--ease), opacity .3s var(--ease);
+}
+
+.lightbox-nav:hover { background: var(--white); color: var(--ink); }
+.lightbox-nav:disabled { opacity: .25; cursor: default; }
+.lightbox-nav:disabled:hover { background: rgba(255, 255, 255, 0.06); color: var(--white); }
+
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px; }
+
+@media (max-width: 640px) {
+  .lightbox-nav { width: 42px; height: 42px; font-size: 24px; }
+  .lightbox-prev { left: 8px; }
+  .lightbox-next { right: 8px; }
+}
+
 /* ============================================================
    Reveal on scroll
    ============================================================ */
