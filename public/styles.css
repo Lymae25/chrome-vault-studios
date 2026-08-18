@@ -843,13 +843,30 @@ img { display: block; max-width: 100%; }
   padding-top: 8px;
 }
 
-.field-hint {
-  font-family: var(--body);
-  font-size: 13px;
+.field-examples {
+  border-left: 2px solid var(--edge-lit);
+  padding-left: 14px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-examples p {
+  font-family: var(--mono);
+  font-size: 10.5px;
   font-style: italic;
+  font-weight: 500;
+  letter-spacing: .04em;
+  text-transform: uppercase;
   color: var(--chrome);
-  line-height: 1.65;
-  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.field-examples .ex-label {
+  font-style: normal;
+  color: var(--edge-lit);
+  margin-right: 6px;
 }
 
 .field-message textarea {
